@@ -42,6 +42,10 @@ Excpect: (theatre.prototype.addMovie(crossroads).toEqual(crossroads{title:, time
 Describe: Theatre.prototype.assignId()
 Test: Assign id to movie object when Theatre.prototype.addMovie() is called.
 Expect: (theatre.prototype.addMovie(crossroads).toEqual(1{id: 1, title:, time:, rating:, price:}))
+
+Describe: Theatre.prototype.findMOvie() 
+Test: find Movie by it ID.
+Expectation: (theater.prototype.findMovie(1).toEqual(1{}));
 ```
 
 
