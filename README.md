@@ -46,8 +46,11 @@ Expect: (theatre.prototype.addMovie(crossroads).toEqual(1{id: 1, title:, time:, 
 Describe: Theatre.prototype.findMOvie() 
 Test: find Movie by it ID.
 Expectation: (theater.prototype.findMovie(1).toEqual(1{}));
-```
 
+Describe: Theatre.prototype.deleteMovie()
+Test: Delete a movie from Theatre.
+Expect: (theatre.prototype.deleteMovie(1).todelete(1{}));
+```
 
 ## License
 
