@@ -27,13 +27,21 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Specifications
 ```
-Describe: Theater()
-Test: Store new object within Theater Constructor.
-Expect: (let theater = new Theater();).toEqual(theater{movies{}, currentId:})
+Describe: Theatre()
+Test: Store new object within Theatre Constructor.
+Expect: (let theater = new Theatre();).toEqual(theatre{movies{}, currentId:})
 
 Describe: Movie()
 Test: Store key-values within movie constructor.
 Expect: (let movie = new Movie();).toEqual(movie{}))
+
+Describe: Theatre.protoype.addMovie()
+Test: Add movie object to theatre object.
+Excpect: (theatre.prototype.addMovie(crossroads).toEqual(crossroads{title:, time:, rating:, price:}))
+
+Describe: Theatre.prototype.assignId()
+Test: Assign id to movie object.
+Expect: (movie.assignId().toEqual(movie1))
 ```
 
 
