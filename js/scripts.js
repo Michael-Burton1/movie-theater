@@ -1,37 +1,37 @@
-// Business Logic for Theater ---------
-function Theatre(){
-  this.movies = {};
+// Business Logic for TicketBooth ---------
+function TicketBooth(){
+  this.tickets = {};
   this.currentId = 0;
 }
-Theatre.prototype.addMovie = function(movie) {
-  movie.id = this.assignId();
-  this.movies[movie.id] = movie;
+TicketBooth.prototype.addTicket = function(ticket) {
+  ticket.id = this.assignId();
+  this.tickets[ticket.id] = ticket;
 }
-Theatre.prototype.assignId = function() {
+TicketBooth.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
 
-Theatre.prototype.findMovie = function(id) {
-  if (this.movies[id] != undefined) {
-    return this.movies[id];
+TicketBooth.prototype.findTicket = function(id) {
+  if (this.tickets[id] != undefined) {
+    return this.tickets[id];
   }
   return false;
 }
 
-Theatre.prototype.deleteMovie = function(id) {
-  if (this.movies[id] === undefined) {
+TicketBooth.prototype.deleteTicket = function(id) {
+  if (this.tickets[id] === undefined) {
     return false; 
   }
-  delete this.movies[id];
+  delete this.tickets[id];
   return true;
 }
 
-// Buisiness logic for movie
-function Movie(title, time, rating, price){
-  this.title = title; 
+// Buisiness logic for Ticket
+function Ticket(title, age, time, price){
+  this.title = title;
+  this.age = age; 
   this.time = time;
-  this.rating = rating;
   this.price = price;
 }
 

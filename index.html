@@ -8,6 +8,33 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container">
+    <form id="ticket-builder">
+      <p>What movie do you want to see:</p>
+      <select class="form-control" id="movieTitle" required>
+        <option selected disabled value>Choose a Movie...</option>
+        <option>T-2</option>
+        <option>Kombucha strikes back</option>
+        <option>Water whurled</option>
+      </select>
+      <br>
+      <select class="form-control" id="movieTime" required>
+        <option selected disabled value>Choose a Time...</option>
+        <option>early</option>
+        <option>later</option>
+      </select>
+      <br>
+      <select class="form-control" id="age" required>
+        <option selected disabled value>How old are you?</option>
+        <option>Youth (0-13)</option>
+        <option>Adult(14-59)</option>
+        <option>Sr.(60+)</option>
+      </select>
+      <br>
+      <button type="submit" class="btn btn-primary">Get My Tix!</button>
+    </form>
+  </div>
 </body>
 </html>
+
+

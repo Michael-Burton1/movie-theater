@@ -27,29 +27,29 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Specifications
 ```
-Describe: Theatre()
-Test: Store new object within Theatre Constructor.
-Expect: (let theater = new Theatre();).toEqual(theatre{movies{}, currentId:})
+Describe: TicketBooth()
+Test: Store new object within TicketBooth Constructor.
+Expect: (let ticketBooth = new TicketBooth();).toEqual(TicketBooth{tickets{}, currentId:})
 
-Describe: Movie()
-Test: Store key-values within movie constructor.
-Expect: (let movie = new Movie();).toEqual(movie{}))
+Describe: Ticket()
+Test: Store key-values within ticket constructor.
+Expect: (let ticket = new Ticket();).toEqual(ticket{}))
 
-Describe: Theatre.protoype.addMovie()
-Test: Add movie object to theatre object.
-Excpect: (theatre.prototype.addMovie(crossroads).toEqual(crossroads{title:, time:, rating:, price:}))
+Describe: TicketBooth.protoype.addTicket()
+Test: Add Ticket object to TicketBooth object.
+Excpect: (TicketBooth.prototype.addTicket(1).toEqual(1{age:, time:}))
 
-Describe: Theatre.prototype.assignId()
-Test: Assign id to movie object when Theatre.prototype.addMovie() is called.
-Expect: (theatre.prototype.addMovie(crossroads).toEqual(1{id: 1, title:, time:, rating:, price:}))
+Describe: TicketBooth.prototype.assignId()
+Test: Assign id to ticket object when TicketBooth.prototype.addTicket() is called.
+Expect: (TicketBooth.prototype.addticket(1).toEqual(1{id: 1, age:, time:}))
 
-Describe: Theatre.prototype.findMOvie() 
-Test: find Movie by it ID.
-Expectation: (theater.prototype.findMovie(1).toEqual(1{}));
+Describe: TicketBooth.prototype.findTicket() 
+Test: Find a ticket by its id.
+Expect: (TicketBooth.prototype.findTicket(1).toEqual(1{}));
 
-Describe: Theatre.prototype.deleteMovie()
-Test: Delete a movie from Theatre.
-Expect: (theatre.prototype.deleteMovie(1).todelete(1{}));
+Describe: TicketBooth.prototype.deleteTicket()
+Test: Delete a ticket from TicketBooth.
+Expect: (TicketBooth.prototype.deleteTicket(1).toDelete(1{}));
 ```
 
 ## License
