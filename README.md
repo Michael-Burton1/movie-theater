@@ -30,7 +30,12 @@ _{This is a detailed description of your application. Give as much detail as nee
 Describe: Theater()
 Test: Store new object within Theater Constructor.
 Expect: (let theater = new Theater();).toEqual(theater{movies{}, currentId:})
+
+Describe: Movie()
+Test: Store key-values within movie constructor.
+Expect: (let movie = new Movie();).toEqual(movie{}))
 ```
+
 
 ## License
 
