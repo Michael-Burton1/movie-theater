@@ -11,28 +11,32 @@
   <div class="container">
     <form id="ticket-builder">
       <p>What movie do you want to see:</p>
-      <select class="form-control" id="movieTitle" required>
+      <select class="form-control" id="movie-title" required>
         <option selected disabled value>Choose a Movie...</option>
-        <option>T-2</option>
-        <option>Kombucha strikes back</option>
-        <option>Water whurled</option>
+        <option value="T-2">T-2</option>
+        <option value="Kombucha Strikes Back">Kombucha Strikes Back</option>
+        <option value="Water Whurled">Water Whurled</option>
       </select>
       <br>
-      <select class="form-control" id="movieTime" required>
+      <select class="form-control" id="movie-time" required>
         <option selected disabled value>Choose a Time...</option>
-        <option value="2">early</option>
-        <option value="4">later</option>
+        <option value="10">3:45pm</option>
+        <option value="15">7:30pm</option>
       </select>
       <br>
       <select class="form-control" id="age" required>
         <option selected disabled value>How old are you?</option>
-        <option value="0">Youth (0-13)</option>
-        <option value="1">Adult (14-59)</option>
-        <option value="2">Sr. (60+)</option>
+        <option value=1>Youth (0-13)</option>
+        <option value=0>Adult (14-59)</option>
+        <option value=2>Senior (60+)</option>
       </select>
       <br>
       <button type="submit" class="btn btn-primary">Get My Tix!</button>
     </form>
+    <br>
+    <div id="show-ticket-price">
+      <p>One ticket for <span id="movie"></span> will cost $<span id="price"></span>.</p>
+    </div>
   </div>
 </body>
 </html>

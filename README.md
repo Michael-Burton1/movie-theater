@@ -23,7 +23,7 @@ _Select the movie that you want to see from the movies showing, the time that yo
 ## Known Bugs
 
 * _UNDER CONSTRUCTION_
-* _No value return to user_
+
 
 ## Specifications
 ```
@@ -50,6 +50,10 @@ Expect: (TicketBooth.prototype.findTicket(1).toEqual(1{}));
 Describe: TicketBooth.prototype.deleteTicket()
 Test: Delete a ticket from TicketBooth.
 Expect: (TicketBooth.prototype.deleteTicket(1).toDelete(1{}));
+
+Describe: Ticket.prototype.createPrice()
+Test: Use age group to change price of ticket.
+Expect: (newTicket.createPrice()).toEqual(this.price -= 2 || 4)
 ```
 
 ## License
