@@ -1,8 +1,8 @@
-# _{Application Name}_
+# _Movie Ticket_
 
-#### _{Brief description of application}_
+#### _Get movie ticket price from user input_
 
-#### By _**Jo Miller**_
+#### By _**Jo Miller, Maxwell Meyer, Michael Burton**_
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_Select the movie that you want to see from the movies showing, the time that you want to see it, and your age group! The cost of the ticket will be returned to you when you submit the form._
 
 ## Setup/Installation Requirements
 
@@ -22,8 +22,8 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _UNDER CONSTRUCTION_
+* _No value return to user_
 
 ## Specifications
 ```
@@ -58,4 +58,6 @@ Expect: (TicketBooth.prototype.deleteTicket(1).toDelete(1{}));
 
 ## Contact Information
 
-_Jo Miller: joannamiller@gmail.com_
+_Jo Miller: joannamiller@gmail.com_ <br>
+_Maxwell Meyer: maxreadswell@gmail.com_ <br>
+_Michael Burton: micbur1@gmail.com_
