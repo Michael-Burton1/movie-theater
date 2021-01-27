@@ -35,8 +35,37 @@ function Ticket(title, age, time, price){
   this.price = price;
 }
 
+// User Interface Logic ---------
+let ticketBooth = new TicketBooth();
+
+function createPrice() {
+  const inputtedTime = parseInt($("input#movieTime").val());
+  const inputtedAge = parseInt($("input#age").val());
+  if (inputtedAge + inputtedTime === 2) {
+    let ticketPrice = "$5";
+  } else if (inputtedAge + inputtedTime === 3) {
+    let ticketPrice = "$4000";
+  } else if (inputtedAge + inputtedTime === 4) {
+    let ticketPrice = "$7";
+  } else if (inputtedAge + inputtedTime === 5) {
+    let ticketPrice = "$8000";
+  } else if (inputtedAge + inputtedTime === 6); {
+    let ticketPrice = "$10";
+  }
+}
 
 
+$(document).ready(function() {
+  $("form#ticket-builder").submit(function(event) {
+    event.preventDefault();
+  const inputtedMovie = $("input#movieTitle").val();
+  const inputtedTime = $("input#movieTime").val();
+  const inputtedAge = $("input#age").val();
+  const ticketPrice = createPrice();  
+  let newTicket = new Ticket(inputtedMovie, inputtedAge, inputtedTime, ticketPrice);
+  console.log(newTicket);
+  });
+});
 
 
 
@@ -61,3 +90,5 @@ $(document).ready(function() {
     console.log(addressBook.contacts);
   });
 });
+
+
